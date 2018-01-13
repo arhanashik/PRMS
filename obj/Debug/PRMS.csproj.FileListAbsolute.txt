@@ -1,0 +1,115 @@
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\PRMS.dll.config
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\PRMS.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\PRMS.pdb
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Antlr3.Runtime.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\EntityFramework.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\EntityFramework.SqlServer.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Google.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Web.Infrastructure.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Newtonsoft.Json.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Owin.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Helpers.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Mvc.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Optimization.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Razor.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.WebPages.Deployment.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.WebPages.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.WebPages.Razor.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\WebGrease.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Helpers.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Mvc.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Optimization.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.Razor.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.WebPages.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.WebPages.Deployment.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\System.Web.WebPages.Razor.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Newtonsoft.Json.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Antlr3.Runtime.pdb
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\EntityFramework.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\EntityFramework.SqlServer.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Google.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.dll
+c:\users\ovi\documents\visual studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.pdb
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\EPPlus.dll
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\EPPlus.xml
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\System.Net.Http.Formatting.dll
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\System.Web.Http.dll
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\System.Web.Http.WebHost.dll
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\System.Net.Http.Formatting.xml
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\System.Web.Http.xml
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\bin\System.Web.Http.WebHost.xml
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.csprojResolveAssemblyReference.cache
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.Migrations.initcse.resources
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.csproj.GenerateResource.Cache
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.Migrations.init.resources
+C:\Users\ovi\Documents\Visual Studio 2013\Projects\PRMS\PRMS\obj\Debug\PRMS.Migrations.cseinit.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\PRMS.dll.config
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\PRMS.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\PRMS.pdb
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\Newtonsoft.Json.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Net.Http.Formatting.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Http.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Http.WebHost.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Net.Http.Formatting.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Http.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Http.WebHost.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.pdb
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.csprojResolveAssemblyReference.cache
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.cseinit.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.csproj.GenerateResource.Cache
+F:\Result.pstu\Ashik'\PRMS\bin\PRMS.dll.config
+F:\Result.pstu\Ashik'\PRMS\bin\PRMS.dll
+F:\Result.pstu\Ashik'\PRMS\bin\PRMS.pdb
+F:\Result.pstu\Ashik'\PRMS\bin\Microsoft.Web.Infrastructure.dll
+F:\Result.pstu\Ashik'\PRMS\bin\Microsoft.Web.XmlTransform.dll
+F:\Result.pstu\Ashik'\PRMS\bin\Newtonsoft.Json.dll
+F:\Result.pstu\Ashik'\PRMS\bin\NuGet.Core.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Net.Http.Formatting.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Helpers.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Http.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Http.WebHost.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Mvc.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Razor.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.WebPages.Deployment.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.WebPages.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.WebPages.Razor.dll
+F:\Result.pstu\Ashik'\PRMS\bin\System.Net.Http.Formatting.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Helpers.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Http.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Http.WebHost.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Mvc.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.Razor.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.WebPages.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.WebPages.Deployment.xml
+F:\Result.pstu\Ashik'\PRMS\bin\System.Web.WebPages.Razor.xml
+F:\Result.pstu\Ashik'\PRMS\bin\Microsoft.Web.Infrastructure.xml
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.dll
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.pdb
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.csprojResolveAssemblyReference.cache
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init.resources
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.csproj.GenerateResource.Cache

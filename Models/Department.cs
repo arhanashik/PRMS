@@ -11,9 +11,12 @@ namespace PRMS.Models
     {
         [Key]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-       public int id { set; get; }
+        public int id { set; get; }
         public String DepartmentName { set; get; }
         public String ShortForm { set; get; }
         public String Faculty { set; get; }
+        public int ChairmanId { set; get; }
+        public String ChairmanName { get; set; }
+        public String ChairmanEmail { get; set; }
     }
 }

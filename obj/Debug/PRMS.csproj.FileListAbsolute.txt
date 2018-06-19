@@ -80,8 +80,6 @@ C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\Microsoft.Web.Infra
 C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.dll
 C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.pdb
 C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.csprojResolveAssemblyReference.cache
-C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.cseinit.resources
-C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.csproj.GenerateResource.Cache
 F:\Result.pstu\Ashik'\PRMS\bin\PRMS.dll.config
 F:\Result.pstu\Ashik'\PRMS\bin\PRMS.dll
 F:\Result.pstu\Ashik'\PRMS\bin\PRMS.pdb
@@ -113,3 +111,37 @@ F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.pdb
 F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.csprojResolveAssemblyReference.cache
 F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init.resources
 F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.csproj.GenerateResource.Cache
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init1.resources
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init2.resources
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init3.resources
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init4.resources
+F:\Result.pstu\Ashik'\PRMS\obj\Debug\PRMS.Migrations.init5.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\Microsoft.Web.XmlTransform.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\NuGet.Core.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Helpers.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Mvc.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Razor.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.WebPages.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Helpers.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Mvc.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.Razor.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.WebPages.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.csproj.GenerateResource.Cache
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init1.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init2.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init3.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init4.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init5.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init6.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init7.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init8.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init9.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init10.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init11.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init12.resources
+C:\Users\Arhan Ashik\Desktop\Visual studio projects\PRMS\obj\Debug\PRMS.Migrations.init13.resources

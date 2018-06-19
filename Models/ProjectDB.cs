@@ -18,10 +18,11 @@ namespace PRMS.Models
        public DbSet<Faculty> Faculty { set; get; }
        public DbSet<Department> Department { set; get; }
        public DbSet<Course> Courses { set; get; }
+       public DbSet<CourseStatus> CourseStatus { set; get; }
        public DbSet<AllSession> AllSession { set; get; }
-       public DbSet<Activity> Activity { set; get; }
+       public DbSet<TeacherActivity> TeacherActivity { set; get; }
+       public DbSet<AdminActivity> AdminActivity { set; get; }
        public DbSet<Admin> Admin { set; get; }
-        
-
+       public DbSet<Result> FinalResults { set; get; }
     }
 }

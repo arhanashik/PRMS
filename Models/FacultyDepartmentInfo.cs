@@ -9,60 +9,7 @@ namespace PRMS.Models
 {
     public class FacultyDepartmentInfo
     {
-
-        public List<String> getFaculty()
-        {
-            List<String> faculties = new List<String>();
-            string connectionString = WebConfigurationManager.ConnectionStrings["prmsDbConnectionString"].ConnectionString;
-            string query = string.Format("SELECT *  FROM [prms].[dbo].[faculties]");
-
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    con.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        faculties.Add(reader.GetString(1));
-                    }
-                }
-                con.Close();
-            }
-            return faculties;
-
-        }
-
-
-
-        public List<String> getDepartment(String faculty)
-        {
-            List<String> departments = new List<String>();
-
-
-            string connectionString = WebConfigurationManager.ConnectionStrings["prmsDbConnectionString"].ConnectionString;
-            string query = string.Format("SELECT *  FROM [prms].[dbo].[departments] WHERE faculty='" + faculty + "'");
-
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    con.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        departments.Add(reader.GetString(1));
-                    }
-                }
-                con.Close();
-            }
-
-            return departments;
-        }
-
-
+       
         public  string createRandomPassword()
         {
             int PasswordLength = 8;

@@ -13,6 +13,7 @@ namespace PRMS.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int id { set; get; }
         public string Session { set; get; }
+        public string Content { get; set; }
 
         public AllSession()
         {

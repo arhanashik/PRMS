@@ -18,7 +18,7 @@
         <div class="col-md-6">
             <ul class="breadcrumb">
                 <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-home"></i> Admin</a></li>
-                <li> Teachers Corner</li>
+                <li> Faculties</li>
                 <li class="active">Manage Faculty</li>
             </ul>
         </div>
@@ -27,89 +27,91 @@
     <!-- /.row -->
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
+<section class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
 
-            <div class="panel">
-                <div class="panel-heading">
-                    <div class="panel-title">
-                        <h5>View Faculty Info</h5>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h5>View Faculty Info</h5>
+                        </div>
+                    </div>
+
+
+                    <!--
+                       <div class="alert alert-success left-icon-alert" role="alert">
+                           <strong>Well done!</strong>
+                       </div>
+                       <div class="alert alert-danger left-icon-alert" role="alert">
+                           <strong>Oh snap!</strong>
+                       </div>
+                    -->
+                    <div class="panel-body p-20">
+
+                        <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Short Form</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Short Form</th>
+                                    <th>Action</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.id)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.FacultyName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ShortForm)
+                                        </td>
+
+                                        <td>
+
+                                            <span>      @Html.ActionLink("Edit", "EditFaculty", "Faculty", new { id = item.id }, new { @class = "btn btn-primary btn-small " }) </span>
+                                            <span>
+                                                @Html.ActionLink("Delete", "DeleteFaculty", "Faculty", new { id = item.id },
+                                                                                            new { onclick = "return confirm('Are you sure you wish to delete this Teacher?');", @class = "btn btn-danger btn-small" })
+                                            </span>
+
+
+                                        </td>
+
+
+                                    </tr>
+                                }
+
+
+
+                            </tbody>
+                        </table>
+
+
+                        <!-- /.col-md-12 -->
                     </div>
                 </div>
-
-
-                <!--
-                   <div class="alert alert-success left-icon-alert" role="alert">
-                       <strong>Well done!</strong>
-                   </div>
-                   <div class="alert alert-danger left-icon-alert" role="alert">
-                       <strong>Oh snap!</strong>
-                   </div>
-                -->
-                <div class="panel-body p-20">
-
-                    <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Short Form</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Short Form</th>
-                                <th>Action</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-
-                            @foreach (var item in Model)
-                            {
-                                <tr>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.id)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.FacultyName)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.ShortForm)
-                                    </td>
-
-                                    <td>
-
-                                        <span>      @Html.ActionLink("Edit", "EditFaculty", "Faculty", new { id = item.id }, new { @class = "btn btn-primary btn-small " }) </span>
-                                        <span>
-                                            @Html.ActionLink("Delete", "DeleteFaculty", "Faculty", new { id = item.id },
-                                                                                            new { onclick = "return confirm('Are you sure you wish to delete this Teacher?');", @class = "btn btn-danger btn-small" })
-                                        </span>
-
-
-                                    </td>
-
-
-                                </tr>
-                            }
-
-
-
-                        </tbody>
-                    </table>
-
-
-                    <!-- /.col-md-12 -->
-                </div>
             </div>
+            <!-- /.col-md-6 -->
+
+
         </div>
-        <!-- /.col-md-6 -->
-
-
+        <!-- /.col-md-12 -->
     </div>
-    <!-- /.col-md-12 -->
-</div>
+    </section>

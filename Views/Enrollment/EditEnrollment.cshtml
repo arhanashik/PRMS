@@ -17,7 +17,7 @@
         <div class="col-md-6">
             <ul class="breadcrumb">
                 <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-home"></i> Admin</a></li>
-
+                <li> Enrollment</li>
                 <li class="active">Edit Student Enrollment</li>
             </ul>
         </div>
@@ -38,17 +38,16 @@
                 </div>
                 <div class="panel-body">
 
-                    @{ if (ViewBag.message != null) {
+                    @{ if (ViewBag.message != null)
+                     {
 
                         <div class="alert alert-success left-icon-alert" role="alert">
-                        <strong>Well done!@ViewBag.message</strong> 
-                    </div>
+                            <strong>@ViewBag.message</strong>
+                        </div>
                      }
                     }
 
                     <form class="form-horizontal" action="/Enrollment/EditEnrollment" method="post">
-
-                        
                         <div class="form-group">
                             <label for="default" class="col-sm-5 control-label">Faculty</label>
                             <div class="col-sm-5">
@@ -85,7 +84,6 @@
                                 <span> @ViewBag.en["Semester"]</span>
                                 <input type="hidden" name="semester" value="@ViewBag.en["Semester"]" />
                             </div>
-
                         </div>
 
                         <div class="form-group">
@@ -94,7 +92,6 @@
                                 <span> @ViewBag.en["Session"]</span>
                                 <input type="hidden" name="session" value="@ViewBag.en["Session"]" />
                             </div>
-
                         </div>
 
                         <div class="form-group">
@@ -103,9 +100,9 @@
 
                             </div>
                             @{ Object enroll = ViewBag.en;
-                               
-                               IDictionary<string, object> dict = new Dictionary<string, object>();
-                               dict = ViewBag.en;
+
+                             IDictionary<string, object> dict = new Dictionary<string, object>();
+                             dict = ViewBag.en;
                              String column1 = "  <div class='row' style=' margin-left:50px'>First</div>  ";
                              String column2 = "  <div class='row' style=' margin-left:50px'>Third</div>  ";
                              String column3 = "  <div class='row' style=' margin-left:50px'>Fifth</div>  ";
@@ -119,107 +116,89 @@
 
                              }
 
+                             foreach (KeyValuePair<string, object> e in dict)
+                             {
+                                 if (e.Value.Equals(false))
+                                 {
+                                     string s = e.Key;
+                                     string c = s.Substring(s.Length - 3, 2);
+                                     int a = int.Parse(c);
 
-                            foreach (KeyValuePair<string, object> e in dict)
-                              {
-                                 
-
-
-                                     if (e.Value.Equals(false))
+                                     if (a == 11 || a == 12)
                                      {
-                                         string s = e.Key;
-                                         string c = s.Substring(s.Length - 3, 2);
-                                         int a = int.Parse(c);
-                                         
-                                         if (a == 11 || a == 12)
-                                         {
-                                             column1 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
-                                         else if (a == 21 || a == 22)
-                                         {
-                                             column2 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
-                                         else if (a == 31 || a == 32)
-                                         {
-                                             column3 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
-                                         else if (a == 41 || a == 42)
-                                         {
-                                             column4 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
+                                         column1 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
                                      }
-                                     else if (e.Value.Equals(true))
+                                     else if (a == 21 || a == 22)
                                      {
-                                         string s = e.Key;
-                                         string c = s.Substring(s.Length - 3, 2);
-                                         int a = int.Parse(c);
-                                         
-                                         if (a == 11 || a == 12)
-                                         {
-                                             column1 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
-                                         else if (a == 21 || a == 22)
-                                         {
-                                             column2 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
-                                         else if (a == 31 || a == 32)
-                                         {
-                                             column3 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
-                                         else if (a == 41 || a == 42)
-                                         {
-                                             column4 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
-
-                                         }
+                                         column2 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
                                      }
-
+                                     else if (a == 31 || a == 32)
+                                     {
+                                         column3 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
+                                     }
+                                     else if (a == 41 || a == 42)
+                                     {
+                                         column4 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
+                                     }
                                  }
-                            
+                                 else if (e.Value.Equals(true))
+                                 {
+                                     string s = e.Key;
+                                     string c = s.Substring(s.Length - 3, 2);
+                                     int a = int.Parse(c);
+
+                                     if (a == 11 || a == 12)
+                                     {
+                                         column1 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
+
+                                     }
+                                     else if (a == 21 || a == 22)
+                                     {
+                                         column2 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
+
+                                     }
+                                     else if (a == 31 || a == 32)
+                                     {
+                                         column3 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
+
+                                     }
+                                     else if (a == 41 || a == 42)
+                                     {
+                                         column4 += "  <div class='row'>" + "<input type='checkbox' style=' margin-left:30px' name='subjectlist' value='" + e.Key + "'checked><span  style='padding-left:20px'>" + e.Key + " </span><br></div>  ";
+
+                                     }
+                                 }
+
+                             }
+
                             <div class="col-sm-2">
-                                @Html.Raw(column1);
+                                @Html.Raw(column1)
                             </div>
-                                <div class="col-sm-2">
-                                    @Html.Raw(column2);
-                                </div>
-                                <div class="col-sm-2">
-                                    @Html.Raw(column3);
-                                </div>
-                                <div class="col-sm-2">
-                                    @Html.Raw(column4);
-                                </div>
-
+                            <div class="col-sm-2">
+                                @Html.Raw(column2)
+                            </div>
+                            <div class="col-sm-2">
+                                @Html.Raw(column3)
+                            </div>
+                            <div class="col-sm-2">
+                                @Html.Raw(column4)
+                            </div>
                             }
+                        </div>
 
-
-                            <div class="form-group">
-                                <div class="col-sm-4">
-                                </div>
-                                <div class="col-sm-offset-2 col-sm-5">
-                                    <button type="submit" id="nextButton" name="submit" class="btn btn-primary">Update Enrollment Subjects</button>
-                                    
-                                    <span>
-                                        @Html.ActionLink("Delete", "Delete", "Enrollment", new { id = ViewBag.en["StudentId"], semester = ViewBag.en["Semester"], faculty = ViewBag.faculty },
-                                                                                            new { onclick = "return confirm('Are you sure you wish to delete this Teacher?');", @class = "btn btn-danger btn-small" })
-                                    </span>
-
-                                </div>
-                                
-                                    
-                                 
+                        <div class="form-group">
+                            <div class="col-sm-4">
                             </div>
+                            <div class="col-sm-offset-2 col-sm-5">
+                                <button type="submit" id="nextButton" name="submit" class="btn btn-primary">Update Enrollment Subjects</button>
 
-
+                                <span>
+                                    @Html.ActionLink("Delete", "Delete", "Enrollment", new { id = ViewBag.en["StudentId"], semester = ViewBag.en["Semester"], faculty = ViewBag.faculty },
+                                                                                            new { onclick = "return confirm('Are you sure you wish to delete this Teacher?');", @class = "btn btn-danger btn-small" })
+                                </span>
+                            </div>
+                        </div>
                     </form>
-
-
-
                 </div>
             </div>
         </div>

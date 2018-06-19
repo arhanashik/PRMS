@@ -27,11 +27,21 @@ namespace PRMS.Models
         public string Nationality { get; set; }
         public string Religion { get; set; }
 
-        public StudentInfo()
+        public static List<StudentInfo> GetStudentInfo(List<CurrentSemester> CurrentSemester)
         {
+            if (CurrentSemester == null) return null;
 
+            List<StudentInfo> AllStudents = new List<StudentInfo>();
+
+            ProjectDB db = new ProjectDB();
+            foreach (CurrentSemester cs in CurrentSemester)
+            {
+                StudentInfo Student = db.StudentInfo.Where(si => si.StudentId == cs.StudentId).FirstOrDefault();
+                if (Student != null) AllStudents.Add(Student);
+            }
+
+            return AllStudents;
         }
-
 
     }
 }

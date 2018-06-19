@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Result Management System | Dashboard</title>
+    <title>PSTU Result Management System | Dashboard</title>
 
     <link rel="stylesheet" href="../stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="../stylesheets/screen.css" media="screen">
@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="navbar-header no-padding">
                         <a class="navbar-brand" href="">
-                            Result Management System
+                            PSTU Result Management System
                         </a>
                         <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -212,39 +212,6 @@
     <script src="../js/production-chart.js"></script>
     <script src="../js/traffic-chart.js"></script>
     <script src="../js/task-list.js"></script>
-    <script>
-        $(function () {
-
-            // Counter for dashboard stats
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-
-            // Welcome notification
-            toastr.options = {
-                "closeButton": true,
-                "debug": false,
-                "newestOnTop": false,
-                "progressBar": false,
-                "positionClass": "toast-top-right",
-                "preventDuplicates": false,
-                "onclick": null,
-                "showDuration": "300",
-                "hideDuration": "1000",
-                "timeOut": "5000",
-                "extendedTimeOut": "1000",
-                "showEasing": "swing",
-                "hideEasing": "linear",
-                "showMethod": "fadeIn",
-                "hideMethod": "fadeOut"
-            }
-            toastr["success"]("Welcome to student Result Management System!");
-
-        });
-    </script>
-
-
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

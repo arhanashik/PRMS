@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "TeachersList";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
-} 
+}
 <div class="container-fluid">
     <div class="row page-title-div">
         <div class="col-md-6">
@@ -25,11 +25,8 @@
     </div>
     <!-- /.row -->
 </div>
-
 <section class="section">
     <div class="container-fluid">
-
-
 
         <div class="row">
             <div class="col-md-12">
@@ -40,16 +37,7 @@
                             <h5>View Classes Info</h5>
                         </div>
                     </div>
-                    
 
-                    <!--
-                    <div class="alert alert-success left-icon-alert" role="alert">
-                        <strong>Well done!</strong> 
-                    </div> 
-                    <div class="alert alert-danger left-icon-alert" role="alert">
-                        <strong>Oh snap!</strong>  
-                    </div>
-                 -->
                     <div class="panel-body p-20">
 
                         <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
@@ -60,7 +48,6 @@
                                     <th>Email</th>
                                     <th>Mobile</th>
                                     <th>Faculty</th>
-                                    <th>Password</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -71,12 +58,11 @@
                                     <th>Email</th>
                                     <th>Mobile</th>
                                     <th>Faculty</th>
-                                    <th>Password</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                
+
                                 @foreach (var item in Model)
                                 {
                                     <tr>
@@ -95,25 +81,21 @@
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Faculty)
                                         </td>
-                                        
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Password)
+
+                                            <span>      @Html.ActionLink("Edit", "Edit", "Admin", new { id = item.TeacherID }, new { @class = "btn btn-primary btn-small " }) </span>
+                                            <span>
+                                                @Html.ActionLink("Delete", "Delete", "Admin", new { id = item.TeacherID },
+                                                                                            new { onclick = "return confirm('Are you sure you wish to delete this Teacher?');", @class = "btn btn-danger btn-small" })
+                                            </span>
+
+                                            <span>      @Html.ActionLink("Detail", "Detail", "Admin", new { id = item.TeacherID }, new { @class = "btn btn-info btn-small " }) </span>
+
+
                                         </td>
-                                        <td>
-
-      <span>      @Html.ActionLink("Edit","Edit", "Admin", new { id = item.TeacherID }, new { @class = "btn btn-primary btn-small " }) </span>
-        <span>      @Html.ActionLink("Delete", "Delete", "Admin", new { id = item.TeacherID },
-                                                                                            new { onclick = "return confirm('Are you sure you wish to delete this Teacher?');", @class = "btn btn-danger btn-small" }) </span>
-
-             <span>      @Html.ActionLink("Detail", "Detail", "Admin", new { id = item.TeacherID }, new { @class = "btn btn-info btn-small " }) </span>
-
-
-</td>
-
-
                                     </tr>
                                 }
-                                
+
 
 
                             </tbody>
@@ -130,10 +112,5 @@
         </div>
         <!-- /.col-md-12 -->
     </div>
-    </div>
-    <!-- /.panel -->
-    </div>
-    <!-- /.col-md-6 -->
-    </div>
-    <!-- /.row -->
-    </div>
+    </section>
+

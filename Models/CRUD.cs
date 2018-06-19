@@ -11,9 +11,10 @@ namespace PRMS.Models
     {
         SqlConnection myConn = new SqlConnection();
 
-        public CRUD(String faculty)
+        public CRUD(String Faculty)
         {
-            myConn = new SqlConnection("Server=OVI-PC\\SQLEXPRESS;Integrated security=true;Initial Catalog=" + faculty + ";");
+            myConn = new SqlConnectionGenerator().FromFaculty(Faculty);
+        
         }
 
         public Boolean InsertCurrentSemester(IDictionary<string, object> dict)
@@ -56,7 +57,7 @@ namespace PRMS.Models
                 String sql = "";
                 if (Convert.ToInt32(dict["Semester"]) % 2 == 0)
                 {
-                    sql = "Insert Into JuneEnrollment (";
+                    sql = "Insert Into JulEnrollment (";
 
                 }
                 else
@@ -109,7 +110,7 @@ namespace PRMS.Models
             String sql = "";
             if (Convert.ToInt32(dict["Semester"]) % 2 == 0)
             {
-                sql = "UPDATE   JuneEnrollment SET ";
+                sql = "UPDATE   JulEnrollment SET ";
 
             }
             else
@@ -148,43 +149,34 @@ namespace PRMS.Models
 
         }
 
-
         public IDictionary<string, object> SelectEnrollment(int Semester, int StudentId)
         {
             IDictionary<string, object> dict = new Dictionary<string, object>();
 
-
             String str;
             if(Semester%2==0)
-                str = "SELECT * FROM JuneEnrollment  WHERE StudentId ='" + StudentId + "' And Semester ='" + Semester + "'";
+                str = "SELECT * FROM JulEnrollment  WHERE StudentId ='" + StudentId + "' And Semester ='" + Semester + "'";
             else
-            str = "SELECT * FROM JanEnrollment  WHERE StudentId ='" + StudentId + "' And Semester ='" + Semester + "'";
-
+                str = "SELECT * FROM JanEnrollment  WHERE StudentId ='" + StudentId + "' And Semester ='" + Semester + "'";
 
             SqlCommand myCommand = new SqlCommand(str, myConn);
-
             try
             {
                 myConn.Open();
                 SqlDataReader oReader = myCommand.ExecuteReader();
                 if (oReader.Read())
                 {
-                    for(int i=0;i<oReader.FieldCount;i++)
+                    for(int i = 0; i < oReader.FieldCount ;i++)
                     {
-                        
                         dict.Add(oReader.GetName(i),oReader.GetValue(i));
-                        
                     }
-                    
                    // currentSemester.StudentId = Convert.ToInt32(oReader["StudentId"]);
                    // currentSemester.Semester = Convert.ToInt32(oReader["Semester"]);
-
                 }
                 else
                 {
                     dict = null;
                 }
-
             }
             catch (System.Exception ex)
             {
@@ -197,8 +189,8 @@ namespace PRMS.Models
                     myConn.Close();
                 }
             }
-            return dict;     
 
+            return dict;
         }
 
         private CurrentSemester CheckIsudentIsPresentOrNot(IDictionary<string, object> dict)
@@ -241,15 +233,14 @@ namespace PRMS.Models
             return currentSemester;
         }
 
-               
-
+         
         internal Boolean DeleteEnrollment(int? id, int semester)
         {
                     
             String sql = "";
             if (semester % 2 == 0)
             {
-                sql = "DELETE FROM JuneEnrollment WHERE StudentId ='"+id+"' And Semester = '"+semester+"'";
+                sql = "DELETE FROM JulEnrollment WHERE StudentId ='"+id+"' And Semester = '"+semester+"'";
 
             }
             else

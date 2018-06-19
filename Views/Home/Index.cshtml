@@ -27,7 +27,7 @@
 
         <div class="">
             <div class="row">
-                <h1 align="center">Student Result Management System</h1>
+                <h1 align="center">PSTU Result Management System</h1>
                 <div class="col-lg-6 visible-lg-block">
 
                     <section class="section">
@@ -45,21 +45,18 @@
                                             <div class="panel-body p-20">
 
                                                 <div class="section-title">
-                                                    <p class="sub-title">Student Result Management System</p>
+                                                    <p class="sub-title">PSTU Result Management System</p>
                                                 </div>
 
                                                 <form class="form-horizontal" method="post">
                                                     <div class="form-group">
                                                         <label for="inputEmail3" class="col-sm-6 control-label">Search your result</label>
                                                         <div class="col-sm-6">
-                                                            <a href="find-result.php">click here</a>
+                                                            <a href="">click here</a>
                                                         </div>
                                                     </div>
 
                                                 </form>
-
-
-
 
                                             </div>
                                         </div>
@@ -107,7 +104,7 @@
                                                                 <option value="">Select Class</option>
                                                                 <option value="admin">Admin</option>
                                                                 <option value="teacher">Teacher</option>
-                                                                </select>
+                                                            </select>
                                                         </div>
                                                     </div>
 
@@ -125,19 +122,55 @@
                                                         </div>
                                                     </div>
 
-
-
                                                     <div class="form-group mt-20">
                                                         <div class="col-sm-offset-2 col-sm-10">
-
                                                             <button type="submit" name="login" class="btn btn-success btn-labeled pull-right">Sign in<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span></button>
                                                         </div>
                                                     </div>
                                                 </form>
-                                            </div >
+
+                                                <div class="panel-title text-right">
+                                                    <a href="#dialog" data-toggle="modal" data-target="#dialog"><p class="small actions" style="color:red" onclick="clearMessage()">Forgot Password?</p></a>
+                                                </div>
+
+                                                <!-- Forget Password dialog -->
+                                                <div id="dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                                                    <div role="document" class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h4 id="exampleModalLabel" class="modal-title">Password Recovery</h4>
+                                                                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form class="form-horizontal" method="post">
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-10">
+                                                                            <select name="usertype" class="form-control" id="usertype" onchange="changeInputType()" required="required">
+                                                                                <option value="">Select Who You Are</option>
+                                                                                <option value="admin">Admin</option>
+                                                                                <option value="teacher">Teacher</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" name="username" class="form-control" id="inputEmail" placeholder="Email Address/Username">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                &nbsp;&nbsp;<strong><span id="recover-password-error" style="color:red"></span></strong>
+                                                                <button type="button" class="btn btn-primary" id="recover-password-btn" onclick="recoverPassword()">Recover Password</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <!-- /.panel -->
-                                        <p class="text-muted text-center"><small>Copyright © SRMS</small></p>
+                                        <p class="text-muted text-center"><small>Copyright © Patuakhali Science & Technology University</small></p>
                                     </div>
                                     <!-- /.col-md-11 -->
                                 </div>
@@ -164,10 +197,9 @@
     <script src="../js/pace/pace.min.js"></script>
     <script src="../js/lobipanel/lobipanel.min.js"></script>
     <script src="../js/iscroll/iscroll.js"></script>
-
-
     <!-- ========== PAGE JS FILES ========== -->
     <!-- ========== THEME JS ========== -->
     <!-- ========== ADD custom.js FILE BELOW WITH YOUR CHANGES ========== -->
+    <script src="../js/validation/recovery.js"></script>
 </body>
 </html>

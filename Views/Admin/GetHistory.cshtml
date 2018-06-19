@@ -2,13 +2,11 @@
 @{
     ViewBag.Title = "GetHistory";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
-    
+
 }
 <script>
-    var mode = 'CSE'; 
+    var mode = 'CSE';
 </script>
-
-
 
 <div class="container-fluid">
     <div class="row page-title-div">
@@ -19,58 +17,60 @@
 
         <!-- /.col-md-6 text-right -->
     </div>
+    <!-- /.row -->
+    <div class="row breadcrumb-div">
+        <div class="col-md-6">
+            <ul class="breadcrumb">
+                <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-home"></i> Admin</a></li>
+                <li> History</li>
+                <li class="active">See History</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- /.row -->
 </div>
 
 <section class="section">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
 
                 <div class="panel">
-                    <!--
-                       <div class="alert alert-success left-icon-alert" role="alert">
-                           <strong>Well done!</strong>
-                       </div>
-                       <div class="alert alert-danger left-icon-alert" role="alert">
-                           <strong>Oh snap!</strong>
-                       </div>
-                    -->
                     <div class="panel-body p-20">
                         @if (ViewBag.History != null)
                         {
-                        <table id="table" name="table" class="display table table-striped table-bordered" cellspacing="0" width="100%">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Designation</th>
-                                    <th>Date</th>
-                                    <th>Message</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Designation</th>
-                                    <th>Date</th>
-                                    <th>Message</th>
-                                </tr>
-                            </tfoot>
-                            <tbody id="tablebody">
-                                @{var i = 0;}
-                                @foreach (var item in ViewBag.History)
-                                {
-                                    i++;
+                            <table id="table" name="table" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+                                <thead>
                                     <tr>
-                                        <td>@i</td>
-                                        <td>@item.Name</td>
-                                        <td>@item.Designation</td>
-                                        <td>@item.Time</td>
-                                        <td>@item.Message</td>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Date</th>
+                                        <th>Message</th>
                                     </tr>
-                                }
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Date</th>
+                                        <th>Message</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody id="tablebody">
+                                    @{var i = 0;}
+                                    @foreach (var item in ViewBag.History)
+                                    {
+                                        i++;
+                                        <tr>
+                                            <td>@i</td>
+                                            <td>@item.Name</td>
+                                            <td>@item.Time</td>
+                                            <td>@item.Message</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
                         }
 
                         @if (ViewBag.Message != null)
@@ -81,8 +81,9 @@
                 </div>
             </div>
             <!-- /.col-md-6 -->
-         
+
         </div>
+    </div>
 </section>
 
 <script>
@@ -124,7 +125,7 @@
 
         var f = document.getElementById("select_session");
         var session = f.options[e.selectedIndex].value;
-        alert("Reload div for: " + course_code+", "+session);
+        alert("Reload div for: " + course_code + ", " + session);
 
         // Find a <table> element with id="myTable":
         var table = document.getElementById("tablebody");
@@ -159,6 +160,6 @@
             }
         });
 
-         //document.getElementById("table").innerHTML.reload;
+        //document.getElementById("table").innerHTML.reload;
     }
 </script>

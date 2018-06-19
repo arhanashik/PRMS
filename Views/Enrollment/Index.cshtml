@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
@@ -19,7 +18,7 @@
         <div class="col-md-6">
             <ul class="breadcrumb">
                 <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-home"></i> Admin</a></li>
-
+                <li> Enrollment</li>
                 <li class="active">Student Enrollment</li>
             </ul>
         </div>
@@ -39,36 +38,29 @@
                     </div>
                 </div>
                 <div class="panel-body">
-
-
-
                     <form class="form-horizontal" method="post">
-
-
                         <div class="form-group">
-                            <label for="default" class="col-sm-2 control-label">Faculty</label>
+                            <label for="default" class="col-sm-2 control-label">Faculty<span style="color:red;">*</span></label>
                             <div class="col-sm-10">
                                 <select name="faculty" class="form-control" id="faculty" onchange="getState()" required="required">
-                                    <option value="">Select Class</option>
+                                    <option value="">Select Faculty</option>
                                     @{  foreach (PRMS.Models.Faculty faculty in ViewBag.faculties)
                                       {
 
                                         @Html.Raw("<option value='" + faculty.ShortForm + "'>" + faculty.FacultyName + "</option>");
 
                                       }
-
-
                                     }
 
                                 </select>
                             </div>
                         </div>
-                        <h3><br /></h3>
-                                     <h4>@ViewBag.s</h4>
+                        <!----<h4>@ViewBag.s</h4> -->
                         <div class="form-group">
-                            <label for="default" class="col-sm-2 control-label">Semester</label>
+                            <label for="default" class="col-sm-2 control-label">Semester<span style="color:red;">*</span></label>
                             <div class="col-sm-10">
                                 <select name="semester" class="form-control" id="semester" required="required">
+                                    <option value="">Select Semester</option>
                                     <option value="1">1st Semester</option>
                                     <option value="2">2nd Semester</option>
                                     <option value="3">3rd Semester</option>
@@ -77,30 +69,17 @@
                                     <option value="6">6th Semester</option>
                                     <option value="7">7th Semester</option>
                                     <option value="8">8th Semester</option>
-
-
-
+                                    <option value="9">9th Semester</option>
                                 </select>
                             </div>
                         </div>
-
-
-
-                        <h3><br /></h3>
-
-
-
-                        
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="button" name="download" class="btn btn-primary" onclick="getState()">Download Excel Formet</button>
                                 <button type="submit" id="nextButton" name="submit" class="btn btn-primary">Next</button>
-                                   
-                            
-                               
-                            
-                              </div>
+
+                            </div>
                         </div>
                     </form>
 
@@ -111,33 +90,28 @@
     </div>
 </div>
 
-     <script>
-         $(document).ready(function () {
-             nextButton.disabled = true;
-             
-         });
-         function getState() {
-             var e = document.getElementById("faculty");
-             var val = e.options[e.selectedIndex].value;
+<script>
+    $(document).ready(function () {
+        nextButton.disabled = true;
 
-             var e1 = document.getElementById("semester");
-             var va2 = e1.options[e1.selectedIndex].value;
+    });
+    function getState() {
+        var e = document.getElementById("faculty");
+        var val = e.options[e.selectedIndex].value;
 
-             var filename = "~/App_Data/CSE/" + val +"_Enroll_"+ va2 +".xlsc"
-             //alert("You Must need to modify this File..\nDon't try to upload your generated File.."+filename);
-             
-             var link = document.createElement("a");
-             link.download = filename;
-             link.href = filename;
-             link.click();
-            
+        var e1 = document.getElementById("semester");
+        var va2 = e1.options[e1.selectedIndex].value;
 
+        var filename = "~/App_Data/CSE/" + val + "_Enroll_" + va2 + ".xlsc"
+        //alert("You Must need to modify this File..\nDon't try to upload your generated File.."+filename);
 
-              nextButton.disabled = false;
-            
-           
-                 }
-         
+        var link = document.createElement("a");
+        link.download = filename;
+        link.href = filename;
+        link.click();
 
+        nextButton.disabled = false;
 
-     </script>
+    }
+
+</script>

@@ -20,8 +20,7 @@ namespace PRMS.Models
         public String Department { set; get; }
         public String Password { set; get; }
        
-        [DefaultValue("false")]
-        public Boolean PasswordChanged { set; get; }
+        
 
         public Teacher(string fullanme, string emailid, string mobile, string faculty, string department,string password)
         {
@@ -42,15 +41,10 @@ namespace PRMS.Models
             Mobile = mobile;
             Faculty = faculty;
             Department = department;
-             
-
         }
         public Teacher()
         {
             // TODO: Complete member initialization
         }
-
-
-
     }
 }

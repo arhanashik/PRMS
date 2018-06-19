@@ -18,7 +18,7 @@
         <div class="col-md-6">
             <ul class="breadcrumb">
                 <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-home"></i> Admin</a></li>
-
+                <li> Teachers Corner</li>
                 <li class="active">Teacher Details</li>
             </ul>
         </div>
@@ -32,7 +32,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel">
-                
+
                 <div class="panel-body">
 
 
@@ -43,8 +43,8 @@
                     <div class="alert alert-danger left-icon-alert" role="alert">
                         <strong>Oh snap!</strong>
                     </div>
-                     -->     
-               
+                     -->
+
                     <dl class="dl-horizontal">
                         <dt>
                             @Html.DisplayNameFor(model => model.Name)
@@ -87,14 +87,6 @@
                         </dd>
 
                         <dt>
-                            @Html.DisplayNameFor(model => model.Password)
-                        </dt>
-
-                        <dd>
-                            @Html.DisplayFor(model => model.Password)
-                        </dd>
-
-                        <dt>
                             <span>      @Html.ActionLink("Edit", "Edit", "Admin", new { id = Model.TeacherID }, new { @class = "btn btn-primary btn-small " }) </span>
 
                         </dt>
@@ -117,4 +109,3 @@
 </div>
 
 
-     
